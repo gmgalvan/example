@@ -22,7 +22,6 @@ func main() {
 	log.Fatal(err)
 }
 
-//comment
 func hello(w http.ResponseWriter, r *http.Request) {
 	log.Printf("Serving request: %s", r.URL.Path)
 	host, _ := os.Hostname()
