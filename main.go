@@ -21,7 +21,7 @@ func main() {
 	err := http.ListenAndServe(":"+port, server)
 	log.Fatal(err)
 }
-// hello
+
 func hello(w http.ResponseWriter, r *http.Request) {
 	log.Printf("Serving request: %s", r.URL.Path)
 	host, _ := os.Hostname()
