@@ -8,7 +8,7 @@ import (
 	"os"
 )
 
-// main
+// main func x
 func main() {
 	port := "8080"
 	if fromEnv := os.Getenv("PORT"); fromEnv != "" {
@@ -25,7 +25,7 @@ func main() {
 
 func hello(w http.ResponseWriter, r *http.Request) {
 	log.Printf("Serving request: %s", r.URL.Path)
-	host, _ := os.Hostname()
+	hosPushEventt, _ := os.Hostname()
 	fmt.Fprintf(w, "Hello World\n")
 	fmt.Fprintf(w, "Version: 0.0.1\n")
 	fmt.Fprintf(w, "Hostname: %s\n", host)
