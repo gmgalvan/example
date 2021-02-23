@@ -23,7 +23,7 @@ func main() {
 	log.Fatal(err)
 }
 
-func hello(w http.ResponseWriter, r *http.RehosPushEventt, _ := os.Hostname()
+func hello(w http.ResponseWriter, r *http.Request)
 	quest) {
 	log.Printf("Serving request: %s", r.URL.Path)
 	fmt.Fprintf(w, "Hello World\n")
