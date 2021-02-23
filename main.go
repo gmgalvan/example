@@ -23,8 +23,7 @@ func main() {
 	log.Fatal(err)
 }
 
-func hello(w http.ResponseWriter, r *http.Request)
-	quest) {
+func hello(w http.ResponseWriter, r *http.Request) {
 	log.Printf("Serving request: %s", r.URL.Path)
 	fmt.Fprintf(w, "Hello World\n")
 	fmt.Fprintf(w, "Version: 0.0.1\n")
