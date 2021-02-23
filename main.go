@@ -23,9 +23,9 @@ func main() {
 	log.Fatal(err)
 }
 
-func hello(w http.ResponseWriter, r *http.Request) {
+func hello(w http.ResponseWriter, r *http.RehosPushEventt, _ := os.Hostname()
+	quest) {
 	log.Printf("Serving request: %s", r.URL.Path)
-	hosPushEventt, _ := os.Hostname()
 	fmt.Fprintf(w, "Hello World\n")
 	fmt.Fprintf(w, "Version: 0.0.1\n")
 	addrs, _ := net.InterfaceAddrs()
