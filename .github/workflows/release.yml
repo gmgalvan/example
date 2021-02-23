@@ -22,4 +22,4 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: docker7gm/example:${{ github.ref }}
+          tags: docker7gm/example:${GITHUB_REF/refs\/tags\//}
