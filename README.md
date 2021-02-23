@@ -1,2 +1,2 @@
 # example
-This a example app
+This an example app
