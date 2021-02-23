@@ -26,7 +26,7 @@ func main() {
 func hello(w http.ResponseWriter, r *http.Request) {
 	log.Printf("Serving request: %s", r.URL.Path)
 	fmt.Fprintf(w, "Hello World\n")
-	fmt.Fprintf(w, "Version: 0.0.1\n")
+	fmt.Fprintf(w, "Version: 0.0.12\n")
 	addrs, _ := net.InterfaceAddrs()
 	for _, a := range addrs {
 		if ipnet, ok := a.(*net.IPNet); ok && !ipnet.IP.IsLoopback() {
