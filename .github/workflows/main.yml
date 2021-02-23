@@ -11,4 +11,4 @@ jobs:
       - name: Build
         run: docker build -t docker7gm/example:${GITHUB_REF##*/} .
       - name: Push to image repo
-        run: docker push gmgalvan/example:${GITHUB_REF##*/} .
+        run: docker image push gmgalvan/example:${GITHUB_REF##*/} .
